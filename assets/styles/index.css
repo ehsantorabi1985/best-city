@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+body{
+    direction:rtl;
+    margin:0;
+    font-family: Vazirmatn;
+}
+*,*:after,*:before{
+    box-sizing:border-box;
+}
+ul ,
+ol {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.header {
+    padding:10px 0;
+    position:fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: fff;
+    z-index: 2;
+}
+.header .header-spliter {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .logo h3{
+  color:#093a58;
+}
+.header .menu a {
+  color:#3acec2;
+  transition:all 0.3s;
+}
+.header .menu a:hover{
+  color:#093a58;
+}
+
+.header .menu ul{
+    display:flex;
+}
+.header .menu ul li a {
+    display:block;
+    padding:5px 15px;
+}
+.hero-section{
+  background-color:#3acec2;
+  padding-top:25px;
+  margin-top:87.3px;
+}
+.hero-section img {
+  width: 190px;
+  height:auto;
+}
+.hero-section .hero-section-spliter {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.hero-section h3 {
+  margin-bottom:0;
+}
+.content .content-spliter {
+  display:flex;
+  gap:20px;
+}
+.content .content-spliter .column:nth-child(1),
+.content .content-spliter .column:nth-child(3) {
+width: 30%;
+}
+.content .content-spliter .column:nth-child(2){
+width:40%;
+}
+.content .column h3 {
+  color:#093a58;
+}
+.content .holder {
+  position:relative;
+}
+.content .holder .sub-column2 {
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:rgba(39, 5, 119, 0.498);
+  padding:0 10px;
+}
+.content .holder .sub-column2 h4{
+  text-align:center;
+}
+.footer {
+  background-color:gray;
+  text-align:center;
+  padding:10px 0;
+}
+@media(max-width:1220px){
+  .container {
+    width:1000px;
+  }
+}
+@media(max-width:1020px){
+  .container{
+    width: 100%;
+  }
+  .content .content-spliter {
+    flex-wrap:wrap;
+    gap:0;
+
+  }
+  .content .content-spliter .column:nth-child(1),
+  .content .content-spliter .column:nth-child(2) {
+    width:50%;
+    padding:10px;
+  }
+  .content .content-spliter .column:nth-child(3) {
+    width:100%;
+    padding:10px;
+  }
+}
+@media(max-width:800px){
+  .content .content-spliter .column:nth-child(1),
+  .content .content-spliter .column:nth-child(2),
+  .content .content-spliter .column:nth-child(3) {
+    width:100%;
+  }
+}
+@media(max-width:500px){
+  .header .header-spliter {
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .header {
+    padding:0;
+  }
+  .hero-section {
+    margin-top:103px;
+  }
+}
